@@ -325,17 +325,6 @@ if __name__ == "__main__":
     print("AI & GIS Daily Digest System")
     print("============================")
     
-    # Run once immediately for testing
-    print("Running initial test...")
+    # Run once and exit (GitHub Actions will schedule it)
     run_once()
-    
-    # Schedule daily at 8:00 AM
-    schedule.every().day.at("08:00").do(send_daily_digest)
-    
-    print("Scheduler started. Will run daily at 8:00 AM.")
-    print("Press Ctrl+C to exit.")
-    
-    # Keep the script running
-    while True:
-        schedule.run_pending()
-        time.sleep(60)
+
