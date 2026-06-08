@@ -1,5 +1,4 @@
 import smtplib
-import schedule
 import time
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -143,7 +142,7 @@ def get_news():
         "gis", "geospatial", "spatial", 
         "ai", "artificial intelligence", "machine learning", "deep learning",
         "remote sensing", "satellite", "imagery",
-        "computer vision", "neural network"
+        "computer vision", "neural network", "QGIS", "ArcGIS", "Remote Sensing", 
     ]
     
     seen_links = set()
